@@ -1,11 +1,11 @@
 namespace InterfaceSegregation
 {
-    public interface IActivities
+    public interface IActivities : 
+    IWorkActivities, 
+    IDesignerActivities,
+    ITesterActivities, 
+    IDeveloperActivities
     {
-        void Plan();
-        void Comunicate();
-        void Design();
-        void Develop();
-        void Test();
+        
     }
 }
